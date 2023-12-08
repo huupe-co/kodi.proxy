@@ -885,7 +885,7 @@ def output_shell(listitem):
 
     output_json_dump({"type": "play", "label": listitem.getLabel() ,"url": listitem.getPath(), "label": listitem.getLabel(), "property": listitem._data['property'],
                       "urlClean": url, "headers": unquote_plus(headers), "licenseUrl": licenseUrl, "licenseHeaders": unquote_plus(licenseHeaders), "licenseType": licenseType})
-    os.system("{}/drm-play.sh '{}' '{}'".format(kodi_home, url, licenseUrl));
+    # os.system("{}/drm-play.sh '{}' '{}' '{}'".format(kodi_home, url, licenseUrl, unquote_plus(headers)));
 
 
 def output_json_dump(item):

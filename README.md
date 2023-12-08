@@ -23,3 +23,7 @@ If you want to use the Slyguy proxy for its various features (force quality, dns
 ```./proxy.py "plugin://script.module.slyguy" service```
 
 With the above running, the proxy.py will return urls that route via the above SlyGuy proxy.
+
+Create archive:
+cd /mnt/data
+tar -czvf new-kodi.tar.gz kodi.proxy
